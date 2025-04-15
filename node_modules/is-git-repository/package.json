@@ -1,0 +1,47 @@
+{
+  "name": "is-git-repository",
+  "version": "3.0.0",
+  "description": "A tool to check if a specific path is a git repository",
+  "type": "module",
+  "exports": {
+    "types": "./index.d.ts",
+    "default": "./index.js"
+  },
+  "scripts": {
+    "test": "vitest run . --coverage --coverage.reporter lcov",
+    "lint": "eslint index.js index.spec.js",
+    "prettier:check": "prettier --check .",
+    "prettier:format": "prettier --write .",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPeer264/node-is-git-repository.git"
+  },
+  "keywords": [
+    "is",
+    "git",
+    "repository",
+    "repo",
+    "is-git",
+    "exists"
+  ],
+  "author": "Jan Peer Stöcklmair",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JPeer264/node-is-git-repository/issues"
+  },
+  "homepage": "https://github.com/JPeer264/node-is-git-repository#readme",
+  "dependencies": {
+    "execa": "^9.5.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "coveralls": "^3.1.1",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.4.2",
+    "vitest": "^2.1.8"
+  }
+}
