@@ -9,5 +9,5 @@ inputs:
     description: Your Codestral AI Key
     required: true
 runs:
-  using: composite
-  main: index.js
+  using: "node16"
+  main: "ndex.js"
