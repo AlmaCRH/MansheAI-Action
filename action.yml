@@ -10,4 +10,4 @@ inputs:
     required: true
 runs:
   using: "node16"
-  main: "ndex.js"
+  main: "index.js"
