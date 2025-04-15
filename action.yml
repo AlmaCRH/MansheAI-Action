@@ -1,0 +1,13 @@
+name: MansheAI Review Bot
+description: Analyzes code diffs and commits with AI and leaves feedback
+author: AlmaCRH
+inputs:
+  github_token:
+    description: GitHub token
+    required: true
+  ai_key:
+    description: Your Codestral AI Key
+    required: true
+runs:
+  using: composite
+  main: index.js
