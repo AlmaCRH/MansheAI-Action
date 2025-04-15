@@ -2,7 +2,7 @@ name: MansheAI Review Bot
 description: Analyzes code diffs and commits with AI and leaves feedback
 author: AlmaCRH
 inputs:
-  github_token:
+  my_code:
     description: GitHub token
     required: true
   ai_key:

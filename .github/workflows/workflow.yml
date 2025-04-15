@@ -1,5 +1,5 @@
   name: Run MansheAI Review
   uses: AlmaCRH/mansheai-action@v1
   with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
+    my_code: ${{ secrets.MY_CODE}}
     ai_key: ${{ secrets.CODESTRAL_KEY }}
