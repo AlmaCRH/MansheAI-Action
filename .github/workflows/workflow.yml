@@ -1,4 +1,4 @@
-- name: Run MansheAI Review
+  name: Run MansheAI Review
   uses: AlmaCRH/mansheai-action@v1
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
