@@ -1,5 +1,5 @@
 import * as core from "@actions/core";
-import { runMansheAI } from "mansheai";
+import { runMansheAI } from "mansheai/main.js";
 const [githubUser, githubRepo] = process.env.GITHUB_REPOSITORY.split("/");
 
 (async () => {
