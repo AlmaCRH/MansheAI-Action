@@ -10,7 +10,7 @@
 
       # Paso 2: Ejecutar MansheAI Action
       - name: Run MansheAI Review
-        uses: AlmaCRH/mansheai-action@v1
+        uses: AlmaCRH/mansheai-action@debuggin-2
         with:
           ai_key: ${{ secrets.CODESTRAL_KEY }}  # Tu clave de AI
           github_token: ${{ secrets.GITHUB_TOKEN }}  # Token de GitHub generado automáticamente
