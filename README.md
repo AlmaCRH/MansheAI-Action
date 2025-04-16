@@ -61,3 +61,7 @@ This action uses Mistral [Codestral](https://mistral.ai/news/codestral/), an adv
 
 ### GitHub Actions
 Built with GitHub Actions, MansheAI seamlessly integrates into your workflow. It runs automatically on every push and helps you maintain a high-quality code.
+
+## License
+This GitHub Action is open-sourced under the MIT License.
+Feel free to use, modify, and distribute it as long as you include the original license and copyright.
