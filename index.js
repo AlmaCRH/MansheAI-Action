@@ -8,7 +8,9 @@ const [githubUser, githubRepo] = process.env.GITHUB_REPOSITORY.split("/");
     if (!aikey || typeof aikey !== "string" || aikey.length < 10) {
       throw new Error("AI key not received or malformed");
     }
-    console.log("✅ AI key length:", aikey.length);
+    if (!githubToken || typeof githubToken !== "string") {
+      throw new Error("AI key not received or malformed");
+    }
     await runMansheAI({
       githubToken,
       aikey,
