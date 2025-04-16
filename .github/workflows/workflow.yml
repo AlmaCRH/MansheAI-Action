@@ -1,16 +1,16 @@
-  name: Run MansheAI Review
-  jobs:
-  review:
-    runs-on: ubuntu-latest
+name: Run MansheAI Review
+jobs:
+review:
+  runs-on: ubuntu-latest
 
-    steps:
-      # Paso 1: Clonar el repositorio
-      - name: Check out repository
-        uses: actions/checkout@v2
+  steps:
+    # Paso 1: Clonar el repositorio
+    - name: Check out repository
+      uses: actions/checkout@v2
 
-      # Paso 2: Ejecutar MansheAI Action
-      - name: Run MansheAI Review
-        uses: AlmaCRH/mansheai-action@debuggin-2
-        with:
-          ai_key: ${{ secrets.CODESTRAL_KEY }}  # Tu clave de AI
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Token de GitHub generado automáticamente
+    # Paso 2: Ejecutar MansheAI Action
+    - name: Run MansheAI Review
+      uses: AlmaCRH/mansheai-action@v1
+      with:
+        ai_key: ${{ secrets.CODESTRAL_KEY }} # Tu clave de AI
+        github_token: ${{ secrets.GITHUB_TOKEN }} # Token de GitHub generado automáticamente
