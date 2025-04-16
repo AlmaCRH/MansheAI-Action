@@ -1,5 +1,5 @@
 # MansheAI-Action
-## What’s MansheAI?
+## 🧠 What’s MansheAI?
 
 **MansheAI** is an AI-powered code review bot that analyzes the files you commit. It extracts the `diff`, compares it with the original code, and provides suggestions to improve your code quality, detect possible bugs, and follow best practices.
 
@@ -7,7 +7,7 @@ It leaves feedback as a comment directly on your commit — all powered by [Code
 
 ---
 
-## How to use it
+## 🔧 How to use it
 
 1. **Create a workflow file** in your repository under `.github/workflows/`, for example:
 
@@ -36,7 +36,7 @@ jobs:
           ai_key: ${{ secrets.CODESTRAL_KEY }}
 ```
 
-## Setting up the secrets
+## ⚙️ Setting up the secrets
 •	Go to your repository Settings → Secrets and variables → Actions → New repository secret
 •	Add your Codestral API key with the name:
 ```bash
@@ -45,23 +45,24 @@ CODESTRAL_KEY
 > [!NOTE]
 > You don’t need to manually add GITHUB_TOKEN — GitHub provides it automatically and securely in workflows.
 
-## What does it review?	•	Clean code and readability
+## 📝 What does it review?	
+•	Clean code and readability
 •	Adherence to best practices <br/>
 •	Potential bugs or logic issues <br/>
 •	Suggestions for refactoring or improvements <br/>
 •	It even provides an improved version of the file (when relevant) <br/>
 
-## Example
+## 💡 Example
 MansheAI will leave a comment like this:
 ![An example of MansheAI's comment](MansheAIExample.png)
 
-## Powered by
+## 🦾 Powered by
 ### Mistral Codestral
 This action uses Mistral [Codestral](https://mistral.ai/news/codestral/), an advanced AI model specialized in code understanding and generation. It’s capable of reviewing your diffs and suggesting high-level improvements just like a CTO would.
 
 ### GitHub Actions
 Built with GitHub Actions, MansheAI seamlessly integrates into your workflow. It runs automatically on every push and helps you maintain a high-quality code.
 
-## License
+## 📄 License
 This GitHub Action is open-sourced under the MIT License.
 Feel free to use, modify, and distribute it as long as you include the original license and copyright.
