@@ -53,7 +53,7 @@ CODESTRAL_KEY
 
 ## Example
 MansheAI will leave a comment like this:
-![An example of MansheAI's comment]()
+![An example of MansheAI's comment](MansheAIExample.png)
 
 ## Powered by
 ### Mistral Codestral
